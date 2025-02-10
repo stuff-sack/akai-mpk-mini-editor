@@ -136,30 +136,30 @@ class WebMIDI {
 
 	// MIDI Message received
 	onMIDIMessage (ev) {
-		/*
+		
 		console.log(ev.data);
 		// Transmit MIDI message to server
 		if (this._onMessage) {
 			this._onMessage(ev.data);
 		}
-  		*/
-		    // Convert the data to an array for easier debugging
-		    const data = Array.from(ev.data);
+  		
+		// Convert the data to an array for easier debugging
+		const data = Array.from(ev.data);
 		
-		    // Log the incoming MIDI data
-		    console.log("Received MIDI message:", data.map((b) => b.toString(16).padStart(2, "0")).join(" "));
+		// Log the incoming MIDI data
+		console.log("Received MIDI message:", data.map((b) => b.toString(16).padStart(2, "0")).join(" "));
 		
-		    // Check if this is a SysEx message (starts with 0xF0)
-		    if (data[0] === 0xF0) {
+		// Check if this is a SysEx message (starts with 0xF0)
+		if (data[0] === 0xF0) {
 			console.log("SysEx Message Received:", data);
-		    } else {
+		} else {
 			console.log("Non-SysEx MIDI Message Received:", data);
-		    }
+		}
 		
-		    // Call the user-provided callback, if any
-		    if (this._onMessage) {
+		// Call the user-provided callback, if any
+		if (this._onMessage) {
 			this._onMessage(data);
-		    }
+		}
 	}
 
 	isPrefered(name) {
