@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Goran Ljubojevic",
-  "homepage": "https://gljubojevic.github.io/akai-mpk-mini-editor",
+  "homepage": "https://stuff-sack.github.io/akai-mpk-mini-editor",
   "dependencies": {
     "browser-filesaver": "^1.1.1",
     "prop-types": "^15.5.8",
