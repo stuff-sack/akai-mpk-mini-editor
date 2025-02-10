@@ -2,7 +2,7 @@
 
 This preset editor is for [Akai MPK mini controller](http://www.akaipro.com/product/mpkmini) using [Web MIDI Api](https://www.w3.org/TR/webmidi/).
 
-For demo/test go to [https://gljubojevic.github.io/akai-mpk-mini-editor/](https://gljubojevic.github.io/akai-mpk-mini-editor/)
+For demo/test go to [https://stuff-sack.github.io/akai-mpk-mini-editor/](https://stuff-sack.github.io/akai-mpk-mini-editor/)
 
 ## Akai MPK Mini SysEx
 
